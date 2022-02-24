@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "2 - Transcribing DNA into RNA", "2 - Transcribing DNA into RNA.pyproj", "{F0F75F00-A0AE-4308-AB9E-21B8C1A51E1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0F75F00-A0AE-4308-AB9E-21B8C1A51E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F75F00-A0AE-4308-AB9E-21B8C1A51E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F35BDD6C-6B9F-4EBA-9779-F54AE34B8630}
+	EndGlobalSection
+EndGlobal
