@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "12 - Overlap Graphs", "12 - Overlap Graphs.pyproj", "{ECF2515C-5814-42B1-8263-C8C1729AE14A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF2515C-5814-42B1-8263-C8C1729AE14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF2515C-5814-42B1-8263-C8C1729AE14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EACDFF5F-FFA5-45D8-9240-84A7D3BF0E47}
+	EndGlobalSection
+EndGlobal
