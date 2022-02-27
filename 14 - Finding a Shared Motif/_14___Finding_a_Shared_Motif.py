@@ -13,6 +13,16 @@ def FASTAFormat(input_string):
 	return fasta
 
 
+def OrderShort(strings):
+	for i in range(len(strings)):
+		for j in range(i+1, len(strings)):
+			if len(strings[j]) < len(strings[i]):
+				temp = strings[j]
+				strings[j] = strings[i]
+				strings[i] = temp
+	return strings
+
+
 input = open(os.getcwd() + r"\data\rosalind_lcsm.txt", "rt")
 output = open(os.getcwd() + r"\data\output.txt", "wt")
 
@@ -20,34 +30,28 @@ data = input.read()
 fasta = FASTAFormat(data)
 
 strings = list(fasta.values())
+strings = OrderShort(strings)
 
-nucs = ['A', 'G', 'C', 'T']
-possible = nucs[:]
+shortest = strings[0]
+strings = strings[1:]
 longest = ''
 
-while len(possible) > 0:
-	not_found = []
+# iterate for size
+for i in range(1, len(shortest)): 
 
-	# check that each possible string is present
-	for p in possible:
+	new_found = False
+	# iterate over the string
+	for j in range(len(shortest) - i):
+		# iterate over each string
 		for s in strings:
-			if p not in s:
-				not_found += [p]
+			if shortest[j:j+i] not in s:
 				break
 		else:
-			longest = p
-
-
-	# remove anything that wasnt found
-	for item in not_found:
-		possible.remove(item)
-
-	# remake the list of possibilies by adding another nuc to the end
-	new = list()
-	for n in nucs:
-		for p in possible:
-			new += [p + n]
-	possible = new[:]
+			longest = shortest[j:j+i]
+			new_found = True
+			break
+		if new_found:
+			break
 
 print(longest)
 output.write(longest)
